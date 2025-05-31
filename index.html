@@ -58,7 +58,8 @@
                 <div class="hidden md:flex items-center space-x-3">
                     <a href="#features" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Características</a>
                     <a href="#about" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Sobre Nosotros</a>
-                    <a href="#" id="goToReaderBtnNav" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg text-sm btn-primary">Ir al Lector</a>
+                    <a href="https://leandrobarriospintos-90.github.io/LectorEpub-2025v6/" target="_blank" id="goToReaderBtnNav" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg text-sm btn-primary">Ir al Lector</a>
+                    <a href="#/" id="goToReaderBtnNav" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-4 py-2 rounded-lg text-sm ml-2 btn-primary2">Donaciones</a>
                 </div>
             </div>
 
@@ -78,7 +79,7 @@
             <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-indigo-200">
                 Accede a tus libros EPUB favoritos directamente desde tu navegador. Sin instalaciones, sin complicaciones. Totalmente gratis.
             </p>
-            <a href="#" id="goToReaderBtn" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 px-10 rounded-lg text-xl shadow-lg btn-primary inline-block">
+            <a href="https://leandrobarriospintos-90.github.io/LectorEpub-2025v6/" target="_blank" id="goToReaderBtn" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 px-10 rounded-lg text-xl shadow-lg btn-primary inline-block">
                 Abrir Lector EPUB
             </a>
             <p class="mt-4 text-sm text-indigo-200">¡Comienza a leer ahora!</p>
@@ -169,14 +170,14 @@
 
         // Función para manejar el clic en los botones del lector
         function handleReaderButtonClick(event) {
-            if (readerURL === '#') {
+            if (readerURL === 'https://leandrobarriospintos-90.github.io/LectorEpub-2025v6/') {
                 // Si readerURL es solo '#', permitir el comportamiento predeterminado del enlace href="#" (ir arriba)
                 // y registrar un aviso en la consola.
                 console.warn("URL del lector no configurada. El enlace '# 'debería llevar al inicio de la página si la URL del lector no está definida.");
                 // No se llama a event.preventDefault() aquí para permitir el comportamiento predeterminado.
             } else {
                 // Si hay una URL real, prevenir el comportamiento predeterminado y navegar.
-                event.preventDefault();
+                //event.preventDefault();
                 window.location.href = readerURL;
             }
         }
